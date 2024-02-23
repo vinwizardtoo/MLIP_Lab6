@@ -21,7 +21,7 @@ pipeline {
                 # Here, WORKSPACE is a Jenkins environment variable that points to the root of the workspace.
                 
                 # Activate the virtual environment
-                source /Users/vinwizard/Desktop/CMU/Sem4/MLiP\ TA/Recitation 6 Jenkins/mlip/bin/activate
+                source '/Users/vinwizard/Desktop/CMU/Sem4/MLiP\ TA/Recitation 6 Jenkins/mlip/bin/activate'
 
                 # Run pytest command within that environment.
                 # You should have pytest installed within the virtual environment for this to work.

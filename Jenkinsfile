@@ -7,7 +7,6 @@ pipeline {
                 sh '''#!/bin/bash
                 echo 'In C or Java, we can compile our program in this step'
                 echo 'In Python, we can build our package here or skip this step'
-                '''
 		# Check if the virtual environment already exists
                 if [ ! -d "venv" ]; then
                     # Create a virtual environment if it doesn't exist
@@ -20,7 +19,9 @@ pipeline {
                 # Upgrade pip and install required packages
                 #python -m pip install --upgrade pip
                 pip install pytest numpy pandas scikit-learn
+                
                 '''
+		
             }
         }
         stage('Test') {
